@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Depósito de Reciclaje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://www.cuidomidespensa.com/hubfs/shutterstock_1526222399.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #3F4A99;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: green;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            width: 100%;
+            color: black;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Depósito de Reciclaje</h1>
+        <form>
+            <label for="username">Nombre de usuario</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="material">Materiales</label>
+            <select id="material" name="material" required>
+                <option value="1">Vidrio</option>
+                <option value="2">Papel y Cartón</option>
+                <option value="3">Aluminio</option>
+                <option value="4">Plástico</option>
+                <option value="5">TetraPak</option>
+            </select>
+
+            <label for="cantidad">Cantidad en kilos</label>
+            <input type="text" id="cantidad" name="cantidad" required>
+
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+    <footer>
+        Alessandro Arce Chaves - 2024
+    </footer>
+</body>
+</html>
